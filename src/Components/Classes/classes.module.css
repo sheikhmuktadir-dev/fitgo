@@ -1,0 +1,16 @@
+.classSection {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding: var(--classes-section-space);
+  background: url(/images/banner/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: var(--black-bg);
+}
+
+.classTitle {
+  color: var(--white-color);
+}

@@ -1,0 +1,44 @@
+.sliderWrapper {
+  width: 100%;
+}
+
+/* Swiper slide */
+:global(.swiper-slide) {
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation buttons */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--orange-bg);
+  color: var(--white-color);
+}
+
+/* Arrow icon */
+:global(.swiper-button-next::after),
+:global(.swiper-button-prev::after) {
+  font-size: 10px !important;
+}
+
+/* Remove default spacing */
+:global(.swiper-button-next) {
+  right: 0;
+}
+
+:global(.swiper-button-prev) {
+  left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  :global(.swiper-button-next),
+  :global(.swiper-button-prev) {
+    display: none;
+  }
+}

@@ -1,0 +1,138 @@
+.videoSection {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: -250px;
+  z-index: 100;
+}
+
+.videoBox {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/images/other/video-banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.videoBox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #151c2380;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.videoBoxInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  z-index: 50;
+}
+
+.videoBoxTitle {
+  position: relative;
+  color: var(--white-color);
+}
+
+.videoBoxLink {
+  position: relative;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.videoBoxLink::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  height: 2px;
+  background-color: var(--white-bg);
+}
+
+.videoBoxLink:hover {
+  color: var(--orange-color);
+}
+
+.videoBoxLink:hover::before {
+  background-color: var(--orange-bg);
+}
+
+.videoPlayButton {
+  position: relative;
+  z-index: 10;
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+}
+
+.videoPlayButton:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: var(--orange-bg);
+  border-radius: 50%;
+  animation: pulse-border 1800ms ease-out infinite;
+}
+
+.videoPlayButton:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: var(--orange-bg);
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.videoPlayButton span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 19px solid var(--white-color);
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  top: 10px;
+  left: 5px;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}

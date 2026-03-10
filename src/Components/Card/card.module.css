@@ -1,0 +1,187 @@
+.classesCard {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background: var(--white-bg);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.classesCardImageBox {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.classesCardImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.classesCard:hover .classesCardImage {
+  transform: scale(1.05, 1.05);
+}
+
+.classesCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding: 30px;
+}
+
+.classesCardTextTopFlex {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.classesCardIcon {
+  position: relative;
+  border-right: 1px solid #e0e0e0;
+  padding-right: 20px;
+}
+
+.classesCardTitle {
+  font-weight: 500;
+  position: relative;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.classesCardTitle:hover {
+  color: var(--orange-color);
+}
+
+.classesCardPara {
+  font-size: 15px;
+}
+
+.classesCardScroll {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.classesCardScrollTopFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.classesprogressBar {
+  width: 100%;
+  max-width: 100%;
+  height: 10px;
+  background-color: var(--orange-bg-light);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.classesprogressFill {
+  background-color: var(--orange-bg);
+  height: 100%;
+  width: 0%;
+  text-align: center;
+  transition: width 0.3s ease;
+}
+
+/* classes card end */
+
+.blogCard {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background: var(--white-bg);
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.blogCardImageBox {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.blogCardImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.blogCard:hover .blogCardImage {
+  transform: scale(1.05, 1.05);
+}
+
+.blogTime {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--orange-bg);
+  padding: 15px 30px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  flex: none;
+}
+
+.blogCardText {
+  position: relative;
+  padding: 30px;
+}
+
+.blogCardPara {
+  position: relative;
+  padding: 20px 0;
+}
+
+.blogBtn {
+  font-weight: 500;
+  position: relative;
+  font-size: 1rem;
+  display: inline-flex;
+  text-transform: uppercase;
+  color: var(--orange-color);
+}
+
+.blogBtn::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--orange-bg);
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .classesCardPara {
+    font-size: 12px;
+  }
+}

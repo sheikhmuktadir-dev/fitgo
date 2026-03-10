@@ -1,0 +1,27 @@
+.blogSection {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  padding: var(--section-space);
+}
+
+.blogCardGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blogMobile {
+  display: none;
+}
+
+@media (max-width: 1023.98px) {
+  .blogCardGrid {
+    display: none;
+  }
+
+  .blogMobile {
+    display: block;
+  }
+}

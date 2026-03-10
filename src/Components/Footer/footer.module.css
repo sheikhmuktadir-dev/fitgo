@@ -1,0 +1,320 @@
+.footerMain {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background: url(/images/banner/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: var(--black-bg);
+}
+
+.footerTopGrid {
+  position: relative;
+  padding: var(--section-space);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footerLogoArea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  gap: 30px;
+}
+
+.footerLogoMain {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.footerLogoMain span {
+  transition: all 0.3s ease;
+  color: var(--white-color);
+}
+
+.footerTime {
+  position: relative;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.footerClockImage {
+  position: relative;
+  max-width: 70px;
+  object-fit: contain;
+}
+
+.footerTimeContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerTimeMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footerLogoPara {
+  font-size: 15px;
+  color: var(--silver-color);
+}
+
+.footerTimeWeek {
+  color: var(--white-color);
+}
+
+.footerLinkHeading {
+  position: relative;
+  display: inline-flex;
+  color: var(--white-color);
+}
+
+.footerLinkHeading::before {
+  content: "";
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 70%;
+  height: 1px;
+  background-color: var(--orange-bg);
+}
+
+.footerList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 0 0;
+}
+
+.footerItem {
+  position: relative;
+}
+
+.footerLink {
+  position: relative;
+  color: var(--silver-color);
+  transition: all 0.3s ease;
+}
+
+.footerLink:hover {
+  color: var(--orange-color);
+}
+
+.footerLinkArea {
+  position: relative;
+  justify-self: center;
+}
+
+.footerLinkFLex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerLinkBox {
+  position: relative;
+  background: var(--orange-bg);
+  width: 40px;
+  border-radius: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  flex: none;
+  height: 40px;
+  color: var(--white-color);
+}
+
+.footerSocialArea {
+  justify-self: end;
+  position: relative;
+}
+
+.footerSocialList {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0 0;
+  gap: 15px;
+}
+
+.footerSocialItem {
+  position: relative;
+}
+
+.footerSocialLink {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #fff3;
+  color: var(--white-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  flex: none;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.footerSocialLink:hover {
+  background: var(--orange-bg);
+}
+
+.footerBottom {
+  position: relative;
+  background: #050a0f;
+  padding: 15px 0;
+}
+
+.footerBottomFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerBottomPara {
+  color: var(--white-color);
+}
+
+.footerBottomPara span {
+  padding-left: 5px;
+  color: var(--orange-color);
+}
+
+.footerBottomList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footerBottomItem {
+  position: relative;
+}
+
+.footerBottomLink {
+  position: relative;
+  color: var(--white-color);
+  padding-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.footerBottomLink:hover {
+  color: var(--orange-color);
+}
+
+.footerBottomLink::before {
+  width: 10px;
+  content: "";
+  position: absolute;
+  left: 0;
+  background: var(--orange-bg);
+  border-radius: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 10px;
+}
+
+.footerInput {
+  margin: 30px 0 0;
+  background: var(--white-bg);
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.footerInputBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 0 20px;
+}
+
+.footerInputBox:focus {
+  outline: none;
+  border: none;
+}
+
+.footerSubmitBtn {
+  width: 50px;
+  height: 50px;
+  background: var(--orange-bg);
+  color: var(--white-color);
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  line-height: 1;
+}
+
+@media (max-width: 767.98px) {
+  .footerTopGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footerLinkArea {
+    justify-self: start;
+  }
+
+  .footerSocialArea {
+    justify-self: start;
+  }
+
+  .footerBottomFlex {
+    align-items: start;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .footerTopGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .footerLinkArea {
+    justify-self: start;
+  }
+
+  .footerSocialArea {
+    justify-self: start;
+  }
+
+  .footerBottomFlex {
+    align-items: start;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+}

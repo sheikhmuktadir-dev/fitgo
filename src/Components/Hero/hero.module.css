@@ -1,0 +1,308 @@
+.heroSection {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background: url(/images/banner/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  padding: 180px 0 0;
+  overflow: hidden;
+  background-color: var(--black-bg);
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  top: -700px;
+  left: -300px;
+  width: 1200px;
+  height: 1200px;
+  background-image: radial-gradient(
+    circle,
+    #fd3d0d33 20%,
+    transparent 70% 100%
+  );
+  z-index: 1;
+}
+
+.heroSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: var(--orange-bg);
+  z-index: 1;
+}
+
+.heroGridFlex {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.heroImageArea {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+.heroImageMain {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  z-index: 40;
+  height: auto;
+  object-fit: contain;
+}
+
+.heroCircleOne,
+.heroCircleTwo {
+  position: absolute;
+  inset: 0;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  z-index: 20;
+  animation: circleHero 8s linear infinite;
+}
+
+@keyframes circleHero {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.heroHeartRate {
+  position: absolute;
+  right: -30px;
+  top: 170px;
+  z-index: 50;
+  max-width: 260px;
+  width: 100%;
+  animation: heartRate 8s linear infinite;
+}
+
+@keyframes heartRate {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translateX(20px);
+  }
+
+  30% {
+    transform: translateY(15px);
+  }
+
+  50% {
+    transform: translateX(-20px);
+  }
+
+  70% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.heroCalories {
+  position: absolute;
+  left: -80px;
+  bottom: 0;
+  max-width: 360px;
+  width: 100%;
+  z-index: 50;
+  animation: Calories 6s linear infinite;
+}
+
+@keyframes Calories {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translateX(-20px);
+  }
+
+  30% {
+    transform: translateY(15px);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  70% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.heroTextArea {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.heroTitle {
+  color: var(--white-color);
+  padding: 40px 0 20px;
+}
+
+.heroPara {
+  font-size: 18px;
+  padding: 0 0 40px;
+  color: var(--silver-color);
+}
+
+.heroTextTopBox {
+  display: inline-flex;
+  height: auto;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  background: var(--gray-bg-light);
+}
+
+.heroTextTopBoxActive,
+.heroTextTopBoxDisable {
+  padding: 10px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.heroTextTopBoxActive {
+  background: var(--orange-bg);
+}
+
+.heroTextTopBoxDisable {
+  background: transparent;
+}
+
+@media (max-width: 767.98px) {
+  .heroSection {
+    background-size: cover;
+    padding: 140px 0 0;
+  }
+
+  .heroSection::after {
+    height: 240px;
+    width: 100%;
+    max-width: 100%;
+    top: auto;
+    bottom: 0;
+  }
+
+  .heroSection::before {
+    display: none;
+  }
+
+  .heroGridFlex {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .heroTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroTextTopBoxActive,
+  .heroTextTopBoxDisable {
+    padding: 4px 10px;
+    font-size: 15px;
+  }
+
+  .heroPara {
+    font-size: 16px;
+  }
+
+  .heroCalories {
+    max-width: 240px;
+    left: 0;
+  }
+
+  .heroHeartRate {
+    top: 140px;
+    max-width: 180px;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .heroSection {
+    background-size: cover;
+  }
+
+  .heroSection::after {
+    height: 340px;
+    width: 100%;
+    max-width: 100%;
+    top: auto;
+    bottom: 0;
+  }
+
+  .heroSection::before {
+    display: none;
+  }
+
+  .heroGridFlex {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .heroTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroCalories {
+    left: 0;
+  }
+
+  .heroHeartRate {
+    top: 140px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .heroCalories {
+    left: 0;
+    max-width: 300px;
+  }
+
+  .heroHeartRate {
+    top: 140px;
+    max-width: 200px;
+    right: 0;
+  }
+
+  .heroTextTopBoxActive,
+  .heroTextTopBoxDisable {
+    padding: 8px;
+    font-size: 16px;
+  }
+}

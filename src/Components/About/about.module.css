@@ -1,0 +1,180 @@
+.aboutSection {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  padding: var(--section-space);
+  overflow: hidden;
+}
+
+.aboutGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  align-items: center;
+}
+
+.aboutImageArea {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+.aboutImageArea::after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: var(--orange-bg);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.aboutMainImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 50;
+  object-fit: contain;
+}
+
+.aboutCircleOne,
+.aboutCircleTwo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+  z-index: 20;
+  right: 0;
+  animation: circleAbout 8s linear infinite;
+}
+
+@keyframes circleAbout {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.aboutFitnessText {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  animation: aboutTextJump 3s linear infinite;
+}
+
+@keyframes aboutTextJump {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.aboutTextArea {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+.aboutTextBottomFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.aboutPara {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutTitle {
+  position: relative;
+  padding: 20px 0 0;
+}
+
+.aboutCoachFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutCoachFlex img {
+  max-width: 70px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 100px;
+}
+
+.aboutCoachText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+@media (max-width: 767.98px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .aboutTextBottomFlex {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .aboutCoachFlex {
+    gap: 10px;
+  }
+
+  .aboutCoachFlex img {
+    max-width: 60px;
+  }
+
+  .aboutPara {
+    padding: 30px 0;
+  }
+}
