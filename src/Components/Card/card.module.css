@@ -53,6 +53,7 @@
 
 .classesCardTitle {
   font-weight: 500;
+  color: var(--black-color);
   position: relative;
   font-size: 1.4rem;
   transition: all 0.3s ease;

@@ -50,7 +50,7 @@ body {
   line-height: 1.4em;
   background: var(--white-bg);
   font-family: "Rubik", sans-serif;
-  color: var(--gray-text);
+  color: var(--gray-color);
   overflow-wrap: break-word;
 }
 
@@ -119,33 +119,34 @@ h1 {
   line-height: 1.1em;
   font-weight: 900;
   font-family: "Catamaran", sans-serif;
-  color: var(--black-text);
+  color: var(--black-color);
 }
 h2 {
   font-size: 4rem;
   font-weight: 800;
   line-height: 1.1em;
   font-family: "Catamaran", sans-serif;
-  color: var(--black-text);
+  color: var(--black-color);
 }
 h3 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.1em;
   font-family: "Catamaran", sans-serif;
-  color: var(--black-text);
+  color: var(--black-color);
 }
 h4 {
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.1em;
   font-family: "Catamaran", sans-serif;
-  color: var(--black-text);
+  color: var(--black-color);
 }
 h5 {
   font-size: 1.5rem;
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
+  color: var(--black-color);
   line-height: 1.2em;
 }
 h6 {
@@ -153,6 +154,7 @@ h6 {
   font-weight: 700;
   font-family: "Catamaran", sans-serif;
   line-height: 1.2em;
+  color: var(--black-color);
 }
 
 .sectionSubtitle {
