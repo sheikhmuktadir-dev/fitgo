@@ -121,7 +121,7 @@ export default function Footer() {
         <div className="container">
           <div className={Style.footerBottomFlex}>
             <p className={Style.footerBottomPara}>
-              © 2026 Fitlife. All Rights Reserved By
+              © 2026 Fitgo. All Rights Reserved By
               <span>Sheikh Muktadir.</span>
             </p>
             <ul className={Style.footerBottomList}>
