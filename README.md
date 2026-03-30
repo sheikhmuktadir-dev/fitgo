@@ -1,16 +1,93 @@
-# React + Vite
+<img width="2174" height="1358" alt="image" src="https://github.com/user-attachments/assets/b340a9c9-3794-4791-8da6-719d1677cf18" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 💪 FitGo – Gym & Fitness Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern and responsive **Gym/Fitness website** built using React and Vite.
+Designed with clean UI, smooth layout, and reusable components to showcase a real-world fitness landing page.
 
-## React Compiler
+🔗 **Live Demo:** https://fitgo-fitness.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 🏋️‍♂️ Modern gym landing page design
+* 📱 Fully responsive (mobile, tablet, desktop)
+* ⚡ Fast performance with Vite
+* 🎯 Clean UI/UX layout
+* 🧩 Reusable components
+* 🎨 Styled with CSS modules
+* 🔄 Dynamic sections (plans, services, etc.)
+
+---
+
+## 🛠️ Tech Stack
+
+* **React.js**
+* **Vite**
+* **CSS Modules**
+* **JavaScript (ES6+)**
+
+---
+
+## 📂 Folder Structure
+
+```id="vtm2f5"
+src/
+│
+├── components/      # UI components
+├── pages/           # Page sections
+├── assets/          # Images & icons
+├── style/           # Global styles
+└── App.jsx
+```
+
+---
+
+## ⚙️ Getting Started
+
+```bash id="u4zrr7"
+# Clone repository
+git clone https://github.com/sheikhmuktadir-dev/fitgo.git
+
+# Navigate to project
+cd fitgo
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+---
+
+## 🎯 What I Learned
+
+* Building responsive layouts in React
+* Component-based UI structure
+* Clean design implementation from concept
+* Managing project structure efficiently
+
+---
+
+## 🚧 Future Improvements
+
+* 📝 Add contact form with validation
+* 🔗 Backend integration (membership system)
+* 🎥 Add animations (Framer Motion)
+
+---
+
+## 👨‍💻 Author
+
+**Sheikh Muktadir**
+
+* GitHub: https://github.com/sheikhmuktadir-dev
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!

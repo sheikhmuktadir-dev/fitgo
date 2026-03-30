@@ -183,6 +183,6 @@ export const openingHours = [
   },
   {
     day: "Saturday - Sunday",
-    time: "7:00Am - 2:00Pm",
+    time: "7:00Am - 3:00Pm",
   },
 ];
