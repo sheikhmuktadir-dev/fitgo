@@ -42,8 +42,8 @@ export default function Navbar() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                width="50px"
-                height="50px"
+                width="48px"
+                height="48px"
                 fill="#fd3d0d"
               >
                 <title>Barbell</title>

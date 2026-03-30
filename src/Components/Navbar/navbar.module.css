@@ -158,4 +158,8 @@
   .navLogoMainActive .navbarToggle {
     color: var(--black-color);
   }
+
+  .navLogoMain {
+    font-size: 30px;
+  }
 }
