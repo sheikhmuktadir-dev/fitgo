@@ -14,6 +14,8 @@
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  transition: transform 0.6s ease;
   align-items: center;
   background: url(/images/other/video-banner.jpg);
   background-position: center center;
@@ -28,6 +30,20 @@
   background: #151c2380;
   z-index: 1;
   border-radius: 10px;
+}
+
+.videoBox::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  z-index: 0;
+  transform: scale(1.1);
+  transition: transform 1.5s ease;
+}
+
+.videoBox:hover::after {
+  transform: scale(1.2);
 }
 
 .videoBoxInner {
@@ -95,7 +111,7 @@
   height: 100px;
   background: var(--orange-bg);
   border-radius: 50%;
-  animation: pulse-border 1800ms ease-out infinite;
+  animation: pulseSmooth 2s ease-out infinite;
 }
 
 .videoPlayButton:after {
@@ -126,13 +142,13 @@
   left: 5px;
 }
 
-@keyframes pulse-border {
+@keyframes pulseSmooth {
   0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
   }
   100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translate(-50%, -50%) scale(1.4);
     opacity: 0;
   }
 }

@@ -10,7 +10,7 @@ export default function CardSlider({ children, duration }) {
     <div className={styles.sliderWrapper}>
       <Swiper
         modules={[Navigation, Autoplay]}
-        spaceBetween={30}
+        spaceBetween={20}
         navigation
         loop={true}
         speed={1000}
@@ -20,13 +20,14 @@ export default function CardSlider({ children, duration }) {
         }}
         breakpoints={{
           320: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 }, // ✅ FIXED
         }}
       >
-        {children.map((child, index) => (
-          <SwiperSlide key={index}>{child}</SwiperSlide>
-        ))}
+        {Array.isArray(children) &&
+          children.map((child, index) => (
+            <SwiperSlide key={index}>{child}</SwiperSlide>
+          ))}
       </Swiper>
     </div>
   );

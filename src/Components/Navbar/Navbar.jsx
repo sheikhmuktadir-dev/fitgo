@@ -22,12 +22,15 @@ export default function Navbar() {
   useEffect(() => {
     if (toggle) {
       document.body.style.overflow = "hidden";
+      document.body.style.height = "100vh"; // ✅ FIX
     } else {
       document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
     }
 
     return () => {
       document.body.style.overflow = "auto";
+      document.body.style.height = "auto";
     };
   }, [toggle]);
 
@@ -55,6 +58,7 @@ export default function Navbar() {
             <button
               onClick={() => setToggle((prev) => !prev)}
               className={Style.navbarToggle}
+              aria-label="Toggle Menu"
             >
               <RiMenu3Fill />
             </button>

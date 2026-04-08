@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Style from "./card.module.css";
 import { useState, useEffect } from "react";
 
-export default function ClassedCard({
+export default function ClassesCard({
   title,
   image,
   icon,
@@ -12,49 +12,52 @@ export default function ClassedCard({
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    let start = 0;
+
     const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= targetProgress) {
-          clearInterval(interval);
-          return targetProgress;
-        }
-        return prev + 1;
-      });
+      start += 1;
+
+      if (start >= targetProgress) {
+        start = targetProgress;
+        clearInterval(interval);
+      }
+
+      setProgress(start);
     }, 20);
+
     return () => clearInterval(interval);
   }, [targetProgress]);
 
   return (
     <div className={Style.classesCard}>
+      {/* IMAGE */}
       <div className={Style.classesCardImageBox}>
-        <img
-          src={image}
-          alt={`${title} image`}
-          className={Style.classesCardImage}
-        />
+        <img src={image} alt={title} className={Style.classesCardImage} />
       </div>
+
+      {/* TEXT */}
       <div className={Style.classesCardText}>
         <div className={Style.classesCardTextTopFlex}>
-          <img
-            src={icon}
-            alt={`${title} icon`}
-            className={Style.classesCardIcon}
-          />
+          <img src={icon} alt={title} className={Style.classesCardIcon} />
           <Link to="/" className={Style.classesCardTitle}>
             {title}
           </Link>
         </div>
+
         <p className={Style.classesCardPara}>{para}</p>
+
+        {/* PROGRESS */}
         <div className={Style.classesCardScroll}>
           <div className={Style.classesCardScrollTopFlex}>
             <h6>Class Full</h6>
             <h6>{progress}%</h6>
           </div>
+
           <div className={Style.classesprogressBar}>
             <div
               className={Style.classesprogressFill}
               style={{ width: `${progress}%` }}
-            ></div>
+            />
           </div>
         </div>
       </div>

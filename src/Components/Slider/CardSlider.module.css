@@ -6,6 +6,9 @@
 :global(.swiper-slide) {
   display: flex;
   justify-content: center;
+  transition: all 0.4s ease;
+  transform: scale(0.9);
+  opacity: 0.6;
 }
 
 /* Navigation buttons */
@@ -18,7 +21,14 @@
   padding: 8px;
   border-radius: 50%;
   background: var(--orange-bg);
+  transform: scale(0.95);
+  opacity: 0.8;
   color: var(--white-color);
+}
+
+:global(.swiper-slide-active) {
+  transform: scale(1);
+  opacity: 1;
 }
 
 /* Arrow icon */
