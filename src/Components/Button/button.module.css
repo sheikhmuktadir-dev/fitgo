@@ -48,7 +48,7 @@
 
 .buttonWhite {
   background: var(--white-bg);
-  color: var(--orange-color);
+  color: #ff8c4d;
 }
 
 .buttonWhite::after {

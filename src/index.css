@@ -16,7 +16,7 @@
   /* bg */
   --black-bg: #151c23;
   --white-bg: #ffffff;
-  --orange-bg: #fd3d0d;
+  --orange-bg: linear-gradient(60deg, #fe4e00 0%, #ff8c4d 100%);
   --orange-bg-light: #fd3d0d1a;
   --gray-bg-light: #ffffff1a;
 
@@ -164,7 +164,7 @@ h6 {
 
 .sectionSubtitle {
   background-color: var(--orange-bg-light);
-  color: var(--orange-color);
+  color: #ff8c4d;
   display: inline-flex;
   justify-content: center;
   align-items: center;
