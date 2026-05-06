@@ -30,7 +30,7 @@
   height: 50%;
   background: var(--orange-bg);
   border-radius: 10px;
-  z-index: 20;
+  z-index: 10;
 }
 
 .aboutMainImage {
@@ -68,7 +68,7 @@
 
 .aboutFitnessText {
   position: absolute;
-  z-index: 30;
+  z-index: 20;
   bottom: 0;
   left: 0;
   right: 0;

@@ -80,51 +80,40 @@ export default function Hero() {
           </motion.div>
 
           {/* 🔥 IMAGE AREA */}
-          <motion.div
-            className={Style.heroImageArea}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className={Style.heroImageArea}>
             {/* MAIN IMAGE */}
-            <motion.img
+            <img
               src={mergedImages.main.src}
               className={Style.heroImageMain}
-              initial={{ scale: 1.2 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 1 }}
+              alt="hero"
             />
 
-            {/* ROTATING CIRCLES (SMOOTH) */}
-            <motion.img
+            {/* CIRCLES (NO ROTATION) */}
+            <img
               src={mergedImages.circleOne.src}
               className={Style.heroCircleOne}
-              animate={{ rotate: 360 }}
-              transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+              alt="circle"
             />
 
-            <motion.img
+            <img
               src={mergedImages.circleTwo.src}
               className={Style.heroCircleTwo}
-              animate={{ rotate: -360 }}
-              transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+              alt="circle"
             />
 
-            {/* FLOATING ICONS */}
-            <motion.img
+            {/* ICONS (NO FLOATING) */}
+            <img
               src={mergedImages.heartRate.src}
               className={Style.heroHeartRate}
-              animate={{ y: [0, -15, 0] }}
-              transition={{ duration: 3, repeat: Infinity }}
+              alt="heart"
             />
 
-            <motion.img
+            <img
               src={mergedImages.calories.src}
               className={Style.heroCalories}
-              animate={{ y: [0, 15, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              alt="calories"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
